@@ -174,16 +174,13 @@ bindsym $mod+r mode "resize"
 
 #custom shit i added
 
-#enter password
-bindsym $mod+x exec bash -c "printf 'hello'"
-
 #remove title bars i3-gaps
 for_window [class=".*"] border pixel 0
 
 #volume control
-bindsym $mod+F1 exec /home/rsrs/scripts/mute.sh
-bindsym $mod+F2 exec --no-startup-id /home/rsrs/scripts/voldown.sh
-bindsym $mod+F3 exec --no-startup-id /home/rsrs/scripts/volup.sh
+bindsym $mod+F1 exec /home/rsrs/.config/scripts/mute.sh
+bindsym $mod+F2 exec --no-startup-id /home/rsrs/.config/scripts/voldown.sh
+bindsym $mod+F3 exec --no-startup-id /home/rsrs/.config/scripts/volup.sh
 
 #brightness control
 bindsym $mod+F12 exec light -A 7
