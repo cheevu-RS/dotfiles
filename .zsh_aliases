@@ -1,0 +1,17 @@
+alias port="sudo netstat -tulpn | grep LISTEN"
+alias clbin="curl -F 'clbin=<-' https://clbin.com"
+alias aria2="aria2c -x 16 -s 16"
+alias gc="git clone"
+alias gc1="git clone --depth=1"
+alias ccl="xclip -sel clip"
+alias bf="cd ~/PROJECTS/beerFactory"
+alias cat="bat"
+alias ks="ls"
+alias rmf="sudo rm -rf"
+alias gdb="LC_ALL=en_US.UTF-8 gdb"
+alias lg="ls -al|grep "
+alias ida64='wine "/home/rsrs/.wine/drive_c/Program Files/IDA 7.0/ida64.exe"'
+alias ida='wine "/home/rsrs/.wine/drive_c/Program Files/IDA 7.0/ida.exe"'
+alias exiftool='/usr/bin/vendor_perl/exiftool'
+alias rand='vlc "$(find /media/Series/fun -type f -name *.m*  | shuf -n 1)"'
+
