@@ -13,5 +13,8 @@ alias lg="ls -al|grep "
 alias ida64='wine "/home/rsrs/.wine/drive_c/Program Files/IDA 7.0/ida64.exe"'
 alias ida='wine "/home/rsrs/.wine/drive_c/Program Files/IDA 7.0/ida.exe"'
 alias exiftool='/usr/bin/vendor_perl/exiftool'
-alias rand='vlc "$(find /media/Series/fun -type f -name *.m*  | shuf -n 1)"'
-
+alias rand='~/.config/scripts/random_tv.sh'
+alias chx='chmod +x'
+alias bl='bluetoothctl -- connect A4:77:58:0A:4C:72'
+alias bl1='bluetoothctl -- connect 08:EB:ED:E8:42:A6'
+alias contest='~/.config/scripts/newContest.sh'
