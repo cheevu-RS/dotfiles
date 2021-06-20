@@ -35,13 +35,4 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
-
-PATH="/home/rsrs/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/rsrs/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/rsrs/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/rsrs/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/rsrs/perl5"; export PERL_MM_OPT;
-
-#export ruby path
-PATH="/home/rsrs/.gem/ruby/2.7.0/bin${PATH:+:${PATH}}"; export PATH;
-
+source $HOME/.local/bin/virtualenvwrapper.sh

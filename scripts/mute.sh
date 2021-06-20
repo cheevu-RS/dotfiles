@@ -1,9 +1,7 @@
 #!/bin/bash
-x=$(pacmd list-sinks|grep -m 1 available|head -c 1)
-i=0
-while [ $i -le $x ]
+mapfile -t sinks < <(pactl list sinks | sed -n -e 's/^.*Sink #//p')
+for sink in "${sinks[@]}"
 do
-	pactl set-sink-mute $i toggle
-#echo $i
-((i++))
+    pactl set-sink-mute $sink toggle
+    ((i++))
 done

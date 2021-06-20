@@ -1,0 +1,118 @@
+;; File Inclusion
+; include an external file, like module file, etc.
+
+include-file = ~/.config/polybar/modules
+
+;; ==================== COLORS ======================
+[colors]
+background = #050505
+foreground = #EEEEEE
+
+black       = ${xrdb:Polybar.color0}
+red         = ${xrdb:Polybar.color1}
+green       = ${xrdb:Polybar.color2}
+yellow      = ${xrdb:Polybar.color3}
+blue        = ${xrdb:Polybar.color4}
+magenta     = ${xrdb:Polybar.color5}
+cyan        = ${xrdb:Polybar.color6}
+white       = ${xrdb:Polybar.color7}
+accent      = #0080F8
+
+;; ===================== BARS ========================
+
+[bar/right]
+monitor = ${env:MONITOR:}
+width = 27.1%
+height = 35px
+offset-x = 72%
+offset-y = 10
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 0
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+font-5 = Misc Termsyn:size=12;2
+font-6 = Wuncon Siji:size=12;2
+font-7 = Iosevka Nerd Font:style=Medium:size=12;3
+
+modules-center =    alsa  battery  backlight    powermenu
+
+wm-restack = i3
+override-redirect = true
+
+[bar/middle]
+monitor = ${env:MONITOR:}
+width = 16%
+height = 35px
+offset-x = 42.5%
+offset-y = 10
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+font-5 = Misc Termsyn:size=12;2
+font-6 = Wuncon Siji:size=12;2
+font-7 = Iosevka Nerd Font:style=Medium:size=12;3
+
+modules-center = wireless-network wired-network
+
+wm-restack = i3
+override-redirect = true
+
+[bar/left]
+monitor = ${env:MONITOR:}
+width = 27.1%
+height = 35px
+offset-x = 11
+offset-y = 10
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 0
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+font-5 = Misc Termsyn:size=12;2
+font-6 = Wuncon Siji:size=12;2
+font-7 = Iosevka Nerd Font:style=Medium:size=12;3
+
+modules-left = date i3
+
+wm-restack = i3
+override-redirect = true
+

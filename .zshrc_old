@@ -1,0 +1,9 @@
+# If you come from bash you might have to change your $PATH.
+ export PATH=$HOME/bin:/usr/local/bin:$PATH
+source ~/.zsh_aliases
+#nvm 
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+#echo "You 're breathtaking!"|figlet|lolcat
+#cat ~/.cache/wal/sequences
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/nvm/init-nvm.sh
